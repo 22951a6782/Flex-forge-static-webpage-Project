@@ -22,7 +22,7 @@
             padding: 2rem;
             position: relative;
             color: white;
-            background-image: url("{{ url_for('static', filename='images/register_img.png') }}"); /* Add your image path */
+            background-image: url("register_img.png"); /* Add your image path */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -68,7 +68,7 @@
             padding: 2rem;
             position: relative;
             color: rgb(255, 255, 255);
-            background-image: url("{{ url_for('static', filename='images/register_img.png') }}"); /* Add your image path */
+            background-image: url("register_img.png"); /* Add your image path */
             background-size: cover; /* Ensure the image covers the entire section */
             background-position: center;
             background-repeat: no-repeat;
@@ -107,7 +107,7 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-light">
             <a class="navbar-brand" href="#">
-                <img src="{{ url_for('static', filename='images/gym_logo1.png') }}" alt="Logo" class="logo">
+                <img src="gym_logo1.png" alt="Logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -150,11 +150,11 @@
                                 <label for="confirm-password">Confirm Password</label>
                                 <input type="password" name="confirm_password" class="form-control" id="confirm-password" placeholder="Confirm your password" required>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="<a href='login.html'></a>">Register</button>
                         </form>
-                        <p class="mt-2">Already a member? <a href='/login'>Login Here</a></p>
+                        <p class="mt-2">Already a member? <a href='login.html'>Login Here</a></p>
                         <div class="text-center mt-4 back">
-                            <a href="/" class="btn btn-secondary">Go to Home</a>
+                            <a href="home.html" class="btn btn-secondary">Go to Home</a>
                         </div>
                     </div>
                 </div>
