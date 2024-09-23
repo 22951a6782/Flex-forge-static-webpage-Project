@@ -118,7 +118,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="text-center">What is your opinion of this page?</h5>
-                        <form action="/submit-feedback" method="POST">
+                        <form>
                             <div class="emoji-feedback text-center my-3">
                                 <label>
                                     <input type="radio" name="rating" value="1" required />
@@ -163,7 +163,7 @@
                             <!-- Hidden input to send user_id -->
                             <input type="hidden" name="user_id" value="{{ session['user_id'] }}">
                         
-                            <button type="submit" class="btn btn-primary btn-block">Send Feedback</button>
+                            <button type="submit" class="btn btn-primary btn-block" onclick="<a href="feedback_thank_you.html"></a>">Send Feedback</button>
                         </form>
                         
                     </div>
