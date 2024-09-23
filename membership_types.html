@@ -238,7 +238,7 @@
             if (selectedTier) {
                 const tierName = selectedTier.getAttribute('data-tier');
                 const price = selectedTier.getAttribute('data-price');
-                const payUrl = `/upi_payment?training_type=${encodeURIComponent(id)}&tier=${encodeURIComponent(tierName)}&price=${encodeURIComponent(price)}`;
+                const payUrl = `upi_payment.html?training_type=${encodeURIComponent(id)}&tier=${encodeURIComponent(tierName)}&price=${encodeURIComponent(price)}`;
                 window.location.href = payUrl;
             } else {
                 alert('Please select a membership tier.');
