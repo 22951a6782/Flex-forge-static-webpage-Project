@@ -74,7 +74,7 @@
             <img src="{{ url_for('static', filename='images/scanner2.png') }}" alt="QR Code">
         </div>
 
-        <form action="/handle_upi_payment" method="post">
+        <form>
             <input type="hidden" name="training_type" id="training_type">
             <input type="hidden" name="tier" id="tier">
             <input type="hidden" name="amount" id="amount">
@@ -86,7 +86,7 @@
                 <label for="email">Email</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
-            <button type="submit" class="btn-pay">Pay Now</button>
+            <button type="submit" class="btn-pay" onclick="<a href="thank_payment.html"></a>">Pay Now</button>
         </form>
 
         <div class="notice">
