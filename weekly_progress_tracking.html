@@ -100,7 +100,7 @@
 <body>
     <div class="container">
         <h1 class="my-4">Track Your Weekly Progress</h1>
-        <form method="POST" action="{{ url_for('submit_progress') }}">
+        <form>
             <div class="mb-3">
                 <label for="progress_date" class="form-label">Date</label>
                 <input type="date" id="progress_date" name="progress_date" class="form-control" required>
@@ -114,7 +114,7 @@
                 <textarea id="issues" name="issues" class="form-control" rows="4"></textarea>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Submit Progress</button>
+                <a href="dashboard.html" class="btn btn-secondary" style="background-color: #18dc66;">Submit</a>
             </div>
         </form>
     </div>
